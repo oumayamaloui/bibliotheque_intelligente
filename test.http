@@ -1,0 +1,35 @@
+### Ajouter un livre
+POST http://127.0.0.1:5000/livres
+Content-Type: application/json
+
+{
+    "titre": "Le Petit Prince",
+    "auteur": "Antoine de Saint-Exupéry",
+    "categorie": "Roman",
+    "annee_publication": 1943,
+    "quantite_disponible": 3,
+    "statut": "disponible"
+}
+{
+    "titre": "Les Misérables",
+    "auteur": "Victor Hugo",
+    "categorie": "Roman",
+    "annee_publication": 1862,
+    "quantite_disponible": 2,
+    "statut": "disponible"
+}
+
+### Afficher tous les livres
+GET http://127.0.0.1:5000/livres
+
+### Afficher un livre par ID
+GET http://127.0.0.1:5000/livres/1
+
+
+### Chatbot
+POST http://127.0.0.1:5000/chat
+Content-Type: application/json
+
+{
+    "question": "Est-ce que Les Misérables est disponible ?"
+}
